@@ -130,6 +130,11 @@ Please refer to **Local Setup** Section for more detailed interactions with Djan
 
 ## Deployment
 
-export DATABASE_NAME=inventorymgmt
-export DATABASE_HOST=db
-GRANT USAGE, CREATE ON SCHEMA public TO inv_user;
+Please refer to `Deployment.md` document
+
+> Disclaimer - Document built using AI assistance.
+
+## Architecture Diagram
+
+Please refer to `architecture.png` file
+
