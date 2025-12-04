@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-8nt@@kipgj@6)e4rk^tnx8ojq1#fso+5$#39y2*dov!6hs^&d#'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'django_filters',
     'drf_spectacular',
+    'inventory'
 ]
 
 MIDDLEWARE = [
@@ -76,6 +79,7 @@ WSGI_APPLICATION = 'inventorymgmt.wsgi.application'
 # Django Rest Framework
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'COERCE_DECIMAL_TO_STRING': False
 }
 
 # OpenAPI Settings
